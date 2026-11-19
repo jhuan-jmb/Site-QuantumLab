@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantum LAB — Conteúdos</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Base compartilhada (variáveis, menu) + estilos desta página -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="conteudos.css">
+</head>
+<body class="pagina-conteudos">
+
+  <main class="stage">
+
+    <!-- Cabeçalho -->
+    <header class="topo">
+      <h1 class="topo-titulo">CONTEÚDOS</h1>
+
+      <form class="busca" role="search" onsubmit="return false">
+        <input type="search" aria-label="Buscar conteúdos">
+        <button type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </header>
+
+    <!-- Mascote (a imagem passa um pouco da borda do cabeçalho, que é transparente) -->
+    <img class="mascote-caixa" src="./img/mascote-caixa.png" alt="Mascote Quantum LAB saindo de uma caixa">
+
+    <!-- Lista de conteúdos -->
+    <section class="lista">
+
+      <article class="item" style="--top: 21.25rem;">
+        <div class="item-info">
+          <h2>Conteúdo 1</h2>
+          <p>Fundamentos</p>
+        </div>
+        <span class="tag" style="--x: 57.65rem;">Status</span>
+        <span class="tag" style="--x: 67.05rem;">Tipo</span>
+        <span class="tag" style="--x: 76.4rem;">xp</span>
+        <a href="#" class="btn-iniciar">INICIAR</a>
+      </article>
+
+      <article class="item" style="--top: 32.05rem;">
+        <div class="item-info">
+          <h2>Conteúdo 2</h2>
+          <p>Fundamentos II</p>
+        </div>
+        <span class="tag" style="--x: 57.65rem;">Status</span>
+        <span class="tag" style="--x: 67.05rem;">Tipo</span>
+        <span class="tag" style="--x: 76.4rem;">xp</span>
+        <a href="#" class="btn-iniciar">INICIAR</a>
+      </article>
+
+      <article class="item" style="--top: 42.85rem;">
+        <div class="item-info">
+          <h2>Conteúdo 3</h2>
+          <p>Fundamentos III</p>
+        </div>
+        <span class="tag" style="--x: 57.65rem;">Status</span>
+        <span class="tag" style="--x: 67.05rem;">Tipo</span>
+        <span class="tag" style="--x: 76.4rem;">xp</span>
+        <a href="#" class="btn-iniciar">INICIAR</a>
+      </article>
+
+    </section>
+
+    <!-- Navegação inferior -->
+    <nav class="menu">
+      <a href="conteudos.html" class="menu-item ativo" style="--x: 20.05rem;" aria-current="page">
+        <span>CONTEÚDOS</span><i class="fa-solid fa-book"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 31.95rem;">
+        <span>EXERCÍCIOS</span><i class="fa-solid fa-list-check"></i>
+      </a>
+      <a href="trilha.html" class="menu-item" style="--x: 44.85rem;">
+        <span>TRILHA</span><i class="fa-solid fa-signs-post"></i>
+      </a>
+      <a href="index.html" class="menu-item" style="--x: 57.05rem;">
+        <span>HOME</span><i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 69.15rem;">
+        <span>LABORATÓRIO</span><i class="fa-solid fa-flask"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 82.25rem;">
+        <span>QUANTUM IA</span><i class="fa-solid fa-robot"></i>
+      </a>
+      <a href="perfil.html" class="menu-item" style="--x: 96.75rem;">
+        <span>PERFIL</span><i class="fa-solid fa-user"></i>
+      </a>
+      <span class="menu-indicador"></span>
+    </nav>
+
+  </main>
+
+</body>
+</html>

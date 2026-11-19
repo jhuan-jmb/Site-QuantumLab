@@ -1,0 +1,145 @@
+/* ==========================================================
+   Quantum LAB — Trilha
+   Usa a base do index.css (variáveis, .stage, .menu, .etapa)
+   e só acrescenta/ajusta o que é específico desta página.
+   Mesma escala: 1rem = 20px da imagem de referência (2576 x 1449).
+   ========================================================== */
+
+/* ---------- Cabeçalho do módulo ---------- */
+.modulo {
+  position: absolute;
+  left: 21.1rem;
+  top: 2.1rem;
+  width: 84.25rem;
+  height: 15.7rem;
+  border-radius: 5.5rem;
+  background: linear-gradient(100deg, var(--roxo-claro) 0%, var(--roxo-escuro) 100%);
+}
+
+.modulo > * {
+  position: absolute;
+}
+
+.modulo-titulo {
+  left: 3.9rem;
+  top: 2.3rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 3.3rem;
+  line-height: 1;
+  color: var(--lilas);
+}
+
+.modulo-pontos {
+  left: 20.6rem;
+  top: 3rem;
+  display: flex;
+  gap: 0.85rem;
+}
+
+.modulo-pontos li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--lilas-ponto);
+}
+
+.modulo-pontos li.ativo {
+  background: #22d3ee;
+}
+
+.modulo-nome {
+  left: 4.1rem;
+  top: 6.7rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.modulo-barra {
+  left: 6.6rem;
+  top: 10.8rem;
+  width: 73.3rem;
+  height: 3.45rem;
+  border-radius: 1.75rem;
+  background: var(--branco);
+  overflow: hidden;
+}
+
+.modulo-barra-fill {
+  width: 80%;
+  height: 100%;
+  border-radius: 1.75rem;
+  background: #22d3ee;
+}
+
+.modulo-barra span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 3.1rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Caminho da trilha ---------- */
+.pagina-trilha .trilha-caminho {
+  left: 0;
+  top: 0;
+  width: 128.8rem;
+  height: 72.45rem;
+}
+
+/* Etapas maiores que as da Home */
+.pagina-trilha .etapa {
+  width: 8.4rem;
+  height: 8.4rem;
+}
+
+.pagina-trilha .etapa-circulo {
+  font-size: 4.2rem;
+}
+
+.pagina-trilha .etapa-nome {
+  font-size: 1.7rem;
+}
+
+.pagina-trilha .etapa-nome.abaixo { top: calc(50% + 5.25rem); }
+.pagina-trilha .etapa-nome.acima  { bottom: calc(50% + 8.75rem); }
+
+/* Etapa bloqueada */
+.etapa.bloqueada {
+  cursor: not-allowed;
+}
+
+.etapa.bloqueada .etapa-circulo {
+  background: #5f566b;
+  box-shadow: none;
+  color: #8f879b;
+  font-size: 5rem;
+}
+
+.etapa.bloqueada:hover .etapa-circulo {
+  transform: none;
+}
+
+/* ---------- Mascote com troféu ---------- */
+.mascote-trofeu {
+  position: absolute;
+  left: 103.04rem;
+  top: 27.79rem;
+  width: 23.17rem;
+  height: auto;
+  pointer-events: none;
+}
+
+/* ---------- Menu: indicador sob "TRILHA" ---------- */
+.pagina-trilha .menu-indicador {
+  left: 41.8rem;
+}

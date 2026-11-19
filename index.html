@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantum LAB — Home</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <main class="stage">
+
+    <!-- Logo -->
+    <a href="#" class="logo" aria-label="Quantum LAB">
+      Quantum <span class="logo-lab">LAB</span>
+    </a>
+
+    <!-- Saudação -->
+    <section class="saudacao">
+      <h1>Olá, <span class="destaque">User</span></h1>
+      <p>Vamos observar o que vem a seguir?</p>
+    </section>
+
+    <!-- Mascote -->
+    <img class="mascote" src="./img/quark-homepage.png" alt="Mascote Quantum LAB: gato saindo de uma caixa">
+
+    <!-- Card do módulo -->
+    <section class="card-modulo">
+      <h2 class="modulo-titulo">Módulo 1</h2>
+      <p class="modulo-capitulo">Capítulo 2</p>
+      <p class="modulo-assunto">Dualidade onda-partícula</p>
+      <p class="modulo-progresso">70% Concluído</p>
+
+      <a href="#" class="btn-retomar">RETOMAR</a>
+
+      <ul class="pontos" aria-hidden="true">
+        <li class="ativo"></li>
+        <li class="ativo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <!-- Barra de progresso -->
+    <div class="barra-xp">
+      <div class="barra-xp-fill"><span>60 / 100</span></div>
+    </div>
+    <div class="nivel" aria-label="Nível 2">
+      <i class="fa-solid fa-flask"></i>
+      <span>2</span>
+    </div>
+
+    <!-- Trilha -->
+    <section class="trilha-cabecalho">
+      <h1>Sua <span class="destaque">Trilha</span></h1>
+      <p>Acompanhe sua jornada</p>
+    </section>
+
+    <div class="trilha">
+      <svg class="trilha-caminho" viewBox="1340 520 1100 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round">
+          <path d="M1455 705 C1490 680 1530 690 1560 705 S1600 715 1625 690"/>
+          <path d="M1697 693 C1720 715 1760 715 1790 700 S1840 685 1865 705"/>
+          <path d="M1930 705 C1960 680 2010 690 2050 708 S2090 705 2100 692"/>
+          <path d="M2178 693 C2200 715 2250 715 2290 700 S2320 690 2335 695"/>
+        </g>
+        <circle cx="1524" cy="692" r="7" fill="#1fd3ee"/>
+        <circle cx="1781" cy="700" r="7" fill="#1fd3ee"/>
+        <!-- bandeira acima de "Fixar" -->
+        <line x1="1897" y1="645" x2="1897" y2="700" stroke="#1fd3ee" stroke-width="4"/>
+        <path d="M1899 647 L1934 647 L1923 656 L1934 665 L1899 665Z" fill="#1fd3ee"/>
+      </svg>
+
+      <a href="#" class="etapa" style="--x: 71.55rem; --y: 38.2rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-flag"></i></span>
+        <span class="etapa-nome abaixo">Iníciar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 83.2rem; --y: 31.75rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-book"></i></span>
+        <span class="etapa-nome acima">Aprender</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 94.9rem; --y: 38.2rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-puzzle-piece"></i></span>
+        <span class="etapa-nome abaixo">Fixar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 106.55rem; --y: 31.75rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-atom"></i></span>
+        <span class="etapa-nome acima">Experimentar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 118.3rem; --y: 38.2rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-trophy"></i></span>
+        <span class="etapa-nome abaixo">Concluir</span>
+      </a>
+    </div>
+
+    <!-- Navegação inferior -->
+    <nav class="menu">
+      <a href="conteudos.html" class="menu-item" style="--x: 20.05rem;">
+        <span>CONTEÚDOS</span><i class="fa-solid fa-book"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 31.95rem;">
+        <span>EXERCÍCIOS</span><i class="fa-solid fa-list-check"></i>
+      </a>
+      <a href="trilha.html" class="menu-item" style="--x: 44.85rem;">
+        <span>TRILHA</span><i class="fa-solid fa-signs-post"></i>
+      </a>
+      <a href="index.html" class="menu-item ativo" style="--x: 57.05rem;" aria-current="page">
+        <span>HOME</span><i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 69.15rem;">
+        <span>LABORATÓRIO</span><i class="fa-solid fa-flask"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 82.25rem;">
+        <span>QUANTUM IA</span><i class="fa-solid fa-robot"></i>
+      </a>
+      <a href="perfil.html" class="menu-item" style="--x: 96.75rem;">
+        <span>PERFIL</span><i class="fa-solid fa-user"></i>
+      </a>
+      <span class="menu-indicador"></span>
+    </nav>
+
+  </main>
+
+</body>
+</html>

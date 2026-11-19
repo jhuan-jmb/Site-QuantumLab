@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantum LAB — Perfil</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Base compartilhada (variáveis, menu) + estilos desta página -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body class="pagina-perfil">
+
+  <main class="stage">
+
+    <!-- Cabeçalho do perfil -->
+    <header class="perfil-topo">
+      <svg class="avatar" viewBox="0 0 222 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Foto de perfil">
+        <circle cx="111" cy="111" r="111" fill="#fff"/>
+        <circle cx="111" cy="86" r="31" fill="#8338ff"/>
+        <ellipse cx="111" cy="166" rx="62" ry="28" fill="#8338ff"/>
+      </svg>
+
+      <h1 class="perfil-nome">NOME</h1>
+      <p class="perfil-usuario">@user123</p>
+
+      <button class="btn-lapis" type="button" aria-label="Editar perfil">
+        <i class="fa-solid fa-pencil"></i>
+      </button>
+    </header>
+
+    <!-- Nível -->
+    <section class="nivel-card">
+      <span class="nivel-numero">Nível 2</span>
+      <span class="nivel-titulo">Aprendiz</span>
+
+      <div class="nivel-barra" role="progressbar" aria-valuemin="0" aria-valuemax="1500" aria-valuenow="1350">
+        <div class="nivel-barra-fill"></div>
+      </div>
+
+      <span class="nivel-frasco" aria-hidden="true">
+        <i class="fa-solid fa-flask"></i><b>2</b>
+      </span>
+      <span class="nivel-xp">1350/1500 XP</span>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="stat" style="--x: 7.35rem;">
+      <i class="stat-icone fa-solid fa-meteor" style="--l: 2.9rem;"></i>
+      <span class="stat-valor" style="--l: 7.75rem;">12 Dias</span>
+      <i class="stat-play fa-solid fa-play"></i>
+    </section>
+
+    <section class="stat" style="--x: 36.4rem;">
+      <i class="stat-icone fa-solid fa-flask" style="--l: 3.45rem;"></i>
+      <span class="stat-valor" style="--l: 7.25rem;">2350</span>
+      <span class="stat-rotulo" style="--l: 13.45rem;">XP total</span>
+    </section>
+
+    <section class="stat" style="--x: 65.55rem;">
+      <i class="stat-icone fa-solid fa-square-check" style="--l: 3.35rem;"></i>
+      <span class="stat-valor" style="--l: 8.5rem;">1</span>
+      <span class="stat-rotulo" style="--l: 11rem;">Módulo completo</span>
+    </section>
+
+    <section class="stat" style="--x: 94.65rem;"></section>
+
+    <!-- Conquistas -->
+    <section class="conquistas">
+      <h2>CONQUISTAS</h2>
+      <i class="fa-solid fa-medal medalha" style="--cx: 6.45rem;"></i>
+      <i class="fa-solid fa-medal medalha" style="--cx: 19.1rem;"></i>
+      <i class="fa-solid fa-trophy trofeu" style="--cx: 32.55rem;"></i>
+    </section>
+
+    <!-- Painéis da direita (espaço para conteúdo futuro) -->
+    <section class="painel painel-grande"></section>
+    <section class="painel painel-a"></section>
+    <section class="painel painel-b"></section>
+    <a href="#" class="painel painel-editar">Editar</a>
+
+    <!-- Navegação inferior -->
+    <nav class="menu">
+      <a href="conteudos.html" class="menu-item" style="--x: 20.05rem;">
+        <span>CONTEÚDOS</span><i class="fa-solid fa-book"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 31.95rem;">
+        <span>EXERCÍCIOS</span><i class="fa-solid fa-list-check"></i>
+      </a>
+      <a href="trilha.html" class="menu-item" style="--x: 44.85rem;">
+        <span>TRILHA</span><i class="fa-solid fa-signs-post"></i>
+      </a>
+      <a href="index.html" class="menu-item" style="--x: 57.05rem;">
+        <span>HOME</span><i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 69.15rem;">
+        <span>LABORATÓRIO</span><i class="fa-solid fa-flask"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 82.25rem;">
+        <span>QUANTUM IA</span><i class="fa-solid fa-robot"></i>
+      </a>
+      <a href="perfil.html" class="menu-item ativo" style="--x: 96.75rem;" aria-current="page">
+        <span>PERFIL</span><i class="fa-solid fa-user"></i>
+      </a>
+      <span class="menu-indicador"></span>
+    </nav>
+
+  </main>
+
+</body>
+</html>

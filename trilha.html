@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantum LAB — Trilha</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Base compartilhada (variáveis, menu, etapas) + estilos desta página -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="trilha.css">
+</head>
+<body class="pagina-trilha">
+
+  <main class="stage">
+
+    <!-- Cabeçalho do módulo -->
+    <section class="modulo">
+      <h1 class="modulo-titulo">Módulo 1</h1>
+
+      <ul class="modulo-pontos" aria-hidden="true">
+        <li class="ativo"></li>
+        <li class="ativo"></li>
+        <li class="ativo"></li>
+        <li class="ativo"></li>
+        <li class="ativo"></li>
+        <li></li>
+      </ul>
+
+      <p class="modulo-nome">Fundamentos da Física Quântica</p>
+
+      <div class="modulo-barra" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+        <div class="modulo-barra-fill"></div>
+        <span>80%</span>
+      </div>
+    </section>
+
+    <!-- Caminho da trilha -->
+    <div class="trilha">
+      <svg class="trilha-caminho" viewBox="0 0 2576 1449" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="14 16" stroke-linecap="round">
+          <path d="M328 822 C350 800 385 797 420 807 S510 835 548 806"/>
+          <path d="M640 810 C665 835 700 838 735 822 S800 795 862 826"/>
+          <path d="M945 823 C975 795 1020 795 1060 810 S1140 835 1166 806"/>
+          <path d="M1266 810 C1290 832 1330 838 1370 820 S1440 795 1472 810"/>
+        </g>
+        <circle cx="416" cy="808" r="9" fill="#22d3ee"/>
+        <circle cx="751" cy="817" r="9" fill="#22d3ee"/>
+        <!-- bandeira acima de "Fixar" -->
+        <line x1="901" y1="742" x2="901" y2="817" stroke="#22d3ee" stroke-width="5"/>
+        <path d="M903 746 C915 740 925 750 936 745 L948 743 L948 772 C937 774 925 770 914 774 L903 776Z" fill="#22d3ee"/>
+      </svg>
+
+      <a href="#" class="etapa" style="--x: 14.75rem; --y: 45rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-flag"></i></span>
+        <span class="etapa-nome abaixo">Iníciar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 29.9rem; --y: 36.65rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-book"></i></span>
+        <span class="etapa-nome acima">Aprender</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 45.1rem; --y: 45rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-puzzle-piece"></i></span>
+        <span class="etapa-nome abaixo">Fixar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 60.3rem; --y: 36.65rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-atom"></i></span>
+        <span class="etapa-nome acima">Experimentar</span>
+      </a>
+      <a href="#" class="etapa" style="--x: 76.7rem; --y: 45rem;">
+        <span class="etapa-circulo"><i class="fa-solid fa-book"></i></span>
+        <span class="etapa-nome abaixo">Aprender</span>
+      </a>
+
+      <!-- Etapa bloqueada -->
+      <span class="etapa bloqueada" style="--x: 92.7rem; --y: 36.2rem;" aria-label="Etapa bloqueada">
+        <span class="etapa-circulo"><i class="fa-solid fa-lock"></i></span>
+      </span>
+    </div>
+
+    <!-- Mascote com o troféu -->
+    <img class="mascote-trofeu" src="./img/mascote-trofeu.png" alt="Mascote Quantum LAB segurando um troféu">
+
+    <!-- Navegação inferior -->
+    <nav class="menu">
+      <a href="conteudos.html" class="menu-item" style="--x: 20.05rem;">
+        <span>CONTEÚDOS</span><i class="fa-solid fa-book"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 31.95rem;">
+        <span>EXERCÍCIOS</span><i class="fa-solid fa-list-check"></i>
+      </a>
+      <a href="trilha.html" class="menu-item ativo" style="--x: 44.85rem;" aria-current="page">
+        <span>TRILHA</span><i class="fa-solid fa-signs-post"></i>
+      </a>
+      <a href="index.html" class="menu-item" style="--x: 57.05rem;">
+        <span>HOME</span><i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 69.15rem;">
+        <span>LABORATÓRIO</span><i class="fa-solid fa-flask"></i>
+      </a>
+      <a href="#" class="menu-item" style="--x: 82.25rem;">
+        <span>QUANTUM IA</span><i class="fa-solid fa-robot"></i>
+      </a>
+      <a href="perfil.html" class="menu-item" style="--x: 96.75rem;">
+        <span>PERFIL</span><i class="fa-solid fa-user"></i>
+      </a>
+      <span class="menu-indicador"></span>
+    </nav>
+
+  </main>
+
+</body>
+</html>

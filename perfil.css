@@ -1,0 +1,282 @@
+/* ==========================================================
+   Quantum LAB — Perfil
+   Usa a base do index.css (variáveis, .stage, .menu)
+   e só acrescenta o que é específico desta página.
+   Mesma escala: 1rem = 20px da imagem de referência (2576 x 1449).
+   ========================================================== */
+
+.pagina-perfil {
+  --card-escuro: #3b1670;
+  --card-painel: #3f1a75;
+  --texto-suave: #a98ad8;
+}
+
+/* ---------- Cabeçalho do perfil ---------- */
+.perfil-topo {
+  position: absolute;
+  left: 7.35rem;
+  top: 2.7rem;
+  width: 114.2rem;
+  height: 15.7rem;
+  border-radius: 5rem;
+  background: linear-gradient(100deg, var(--roxo-claro) 0%, var(--roxo-escuro) 100%);
+}
+
+.perfil-topo > * {
+  position: absolute;
+}
+
+.avatar {
+  left: 1.9rem;
+  top: 2.15rem;
+  width: 11.1rem;
+  height: 11.1rem;
+}
+
+.perfil-nome {
+  left: 16.35rem;
+  top: 4.7rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 1;
+}
+
+.perfil-usuario {
+  left: 16.35rem;
+  top: 8.55rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 1;
+  color: #c3a2ff;
+}
+
+.btn-lapis {
+  left: 108.1rem;
+  top: 2rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 0;
+  background: transparent;
+  color: var(--branco);
+  font-size: 3.4rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.btn-lapis:hover {
+  transform: scale(1.1);
+}
+
+.btn-lapis:focus-visible,
+.painel-editar:focus-visible {
+  outline: 0.2rem solid var(--ciano);
+  outline-offset: 0.3rem;
+}
+
+/* ---------- Nível ---------- */
+.nivel-card {
+  position: absolute;
+  left: 7.35rem;
+  top: 20.25rem;
+  width: 114.2rem;
+  height: 4.55rem;
+  border-radius: 2.3rem;
+  background: linear-gradient(100deg, var(--roxo-claro) 0%, var(--roxo-escuro) 100%);
+}
+
+.nivel-card > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nivel-numero {
+  left: 3.05rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.nivel-titulo {
+  left: 11.75rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #c9a8ff;
+}
+
+.nivel-barra {
+  left: 20.1rem;
+  width: 76.55rem;
+  height: 1.95rem;
+  border-radius: 1rem;
+  background: var(--branco);
+  overflow: hidden;
+}
+
+.nivel-barra-fill {
+  width: 83%;
+  height: 100%;
+  border-radius: 1rem;
+  background: var(--amarelo);
+}
+
+.nivel-frasco {
+  left: 97.9rem;
+  width: 2.3rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+
+.nivel-frasco b {
+  position: absolute;
+  bottom: 0.05rem;
+  font-family: var(--fonte-titulo);
+  font-size: 0.75rem;
+  color: var(--roxo-escuro);
+}
+
+.nivel-xp {
+  left: 101.7rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #c9a8ff;
+}
+
+/* ---------- Estatísticas ---------- */
+.stat {
+  position: absolute;
+  left: var(--x);
+  top: 26.65rem;
+  width: 26.8rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  background: var(--card-escuro);
+}
+
+.stat > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.stat-icone {
+  left: var(--l);
+  font-size: 3rem;
+}
+
+.stat-valor {
+  left: var(--l);
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.stat-rotulo {
+  left: var(--l);
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--texto-suave);
+}
+
+.stat-play {
+  left: 22rem;
+  font-size: 2.1rem;
+}
+
+/* ---------- Conquistas ---------- */
+.conquistas {
+  position: absolute;
+  left: 7.1rem;
+  top: 34.25rem;
+  width: 56.15rem;
+  height: 18.95rem;
+  border-radius: 3.5rem;
+  background: linear-gradient(165deg, #3a1670 0%, #461c7c 100%);
+}
+
+.conquistas h2 {
+  position: absolute;
+  left: 3.35rem;
+  top: 1.45rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.medalha,
+.trofeu {
+  position: absolute;
+  left: var(--cx);
+  top: 11.35rem;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+}
+
+.medalha { font-size: 8rem; }
+.trofeu  { font-size: 7rem; }
+
+/* ---------- Painéis da direita ---------- */
+.painel {
+  position: absolute;
+  border-radius: 3.65rem;
+  background: var(--card-painel);
+}
+
+.painel-grande {
+  left: 65.35rem;
+  top: 34.5rem;
+  width: 56.2rem;
+  height: 7.35rem;
+}
+
+.painel-a {
+  left: 65.35rem;
+  top: 45.2rem;
+  width: 27rem;
+  height: 7.3rem;
+}
+
+.painel-b {
+  left: 94.65rem;
+  top: 45.2rem;
+  width: 12.65rem;
+  height: 7.3rem;
+}
+
+.painel-editar {
+  left: 109.45rem;
+  top: 45.2rem;
+  width: 12.1rem;
+  height: 7.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.9rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.7rem;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+
+.painel-editar:hover {
+  background: #4b2088;
+}
+
+/* ---------- Menu: indicador sob "PERFIL" ---------- */
+.pagina-perfil .menu-indicador {
+  left: 93.5rem;
+}
